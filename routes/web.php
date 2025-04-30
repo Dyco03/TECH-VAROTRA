@@ -22,7 +22,7 @@ Route::get('/select_par_cat/{name}',[ClientController::class,'select_par_cat']);
 Route::get('/ajouter_au_panier/{id}',[ClientController::class,'ajouter_au_panier']);
 Route::post('/modifier_qty/{id}',[ClientController::class,'modifier_panier']);
 Route::get('/retirer_produit/{id}',[ClientController::class,'retirer_produit']);
-
+Route::get('/creer_compte/{id}',[ClientController::class,'creer_compte']);
 
 //backend
 Route::get('/admin',[AdminController::class,'dashboard']);

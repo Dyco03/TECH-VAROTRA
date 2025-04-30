@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Slider;
 use App\Models\Product;
 use App\Models\Category;
+use App\Models\Client;
 use App\Cart;
 use Session;
 
@@ -87,6 +88,20 @@ class ClientController extends Controller
         //dd(Session::get('cart'));
         return redirect('/panier');
     }
+
+    public function creer_compte(Request $request){
+        $this->validate($request,['email' => 'email|required',
+                                    'password' => 'required|min:4']);
+    
+        $client = new Client();
+        $client->email = $request->input('email');
+        $client->password = bcrypt($request->input('password'));
+
+        $client->save();
+
+        return back()->with('status','Votre compte a été créé avec succès');
+    }
+
     public function client_login(){
         return view('client.login');
     }
