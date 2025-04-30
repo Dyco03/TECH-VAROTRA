@@ -34,6 +34,7 @@
 
                   <div class="form-group">
                     <label for="category">Catégorie du produit (required, at least 2 characters)</label>
+                    
                     <select id="category" class="form-control" name="product_category">
                       <option value="">Select</option>
                       @foreach ($categories as $category_name)
