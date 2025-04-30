@@ -10,13 +10,15 @@
   <link rel="stylesheet" href="{{asset('backend/css/themify-icons.css')}}">
   <link rel="stylesheet" href="{{asset('backend/css/vendor.bundle.base.css')}}">
   <link rel="stylesheet" href="{{asset('backend/css/vendor.bundle.addons.css')}}">
+  <link rel="stylesheet" href="{{ asset('css/themify-icons.css') }}">
+
   <!-- endinject -->
   <!-- plugin css for this page -->
   <!-- End plugin css for this page -->
   <!-- inject:css -->
   <link rel="stylesheet" href="{{asset('backend/css/style.css')}}">
   <!-- endinject -->
-  <link rel="shortcut icon" href="{{asset('backend/images//logo_2H_tech.png')}}" />
+  <link rel="shortcut icon" href="{{asset('backend/images//logo_tv.png')}}" />
 </head>
 <body>
 

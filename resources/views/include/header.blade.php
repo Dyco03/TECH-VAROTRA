@@ -61,9 +61,10 @@
 	        <ul class="navbar-nav ml-auto">
 			  <li class="nav-item active"><a href="/" class="nav-link">Home</a></li>
 			  <li class="nav-item active"><a href="/shop" class="nav-link">shop</a></li>
-	          
+			  	          
 	          <li class="nav-item cta cta-colored"><a href="/panier" class="nav-link"><span class="icon-shopping_cart"></span>[{{Session::has('cart')? Session::get('cart')->totalQty:0}}]</a></li>
 
+			  <li class="nav-item active"><a href="/client_login" class="nav-link">Login</a></li>
 	        </ul>
 	      </div>
 	    </div>
